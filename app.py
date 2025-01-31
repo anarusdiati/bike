@@ -7,8 +7,17 @@ import seaborn as sns
 # Load dataset
 df = pd.read_csv("day.csv")
 
+st.write("Nama: Rokhana Diyah Rusdiati")
+st.write("Email: anausername@gmail.com")
+st.write("ID Dicoding: anarusdiati")
+
 # Title
 st.title("Bike Sharing Analysis")
+
+# Business questions
+st.write("## Conclusions")
+st.write("- Bagaimana pengaruh musim terhadap jumlah penyewaan sepeda?")
+st.write("- Bagaimana tren penyewaan sepeda dari waktu ke waktu?")
 
 # Display first few rows
 st.write("### Data Overview", df.head())
@@ -28,10 +37,6 @@ sns.histplot(df['cnt'], bins=30, kde=True, ax=ax)
 ax.set_xlabel('Total Rentals')
 ax.set_ylabel('Frequency')
 st.pyplot(fig)
-
-# Business Questions:
-# 1. Bagaimana pengaruh musim terhadap jumlah penyewaan sepeda?
-# 2. Bagaimana tren penyewaan sepeda dari waktu ke waktu?
 
 # Seasonal Analysis
 st.write("### Bike Rentals by Season")
