@@ -15,7 +15,7 @@ st.write("ID Dicoding: anarusdiati")
 st.title("Bike Sharing Analysis")
 
 # Business questions
-st.write("## Conclusions")
+st.write("### Business questions")
 st.write("- Bagaimana pengaruh musim terhadap jumlah penyewaan sepeda?")
 st.write("- Bagaimana tren penyewaan sepeda dari waktu ke waktu?")
 
