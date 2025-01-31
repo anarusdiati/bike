@@ -57,11 +57,5 @@ st.pyplot(fig)
 
 # Conclusions
 st.write("## Conclusions")
-st.write("- Musim berpengaruh terhadap jumlah penyewaan, dengan Fall sebagai musim dengan penyewaan tertinggi.")
-st.write("- Terdapat tren peningkatan penyewaan dari waktu ke waktu, dengan variasi harian yang terlihat.")
-
-# Instructions for Deployment
-st.write("### Deployment Guide")
-st.write("1. Upload this script and dataset (`day.csv`) to a GitHub repository.")
-st.write("2. Create a Streamlit Cloud account and connect it to your GitHub repository.")
-st.write("3. Deploy the app and ensure `requirements.txt` includes `streamlit pandas numpy matplotlib seaborn`.")
+st.write("- Musim berpengaruh terhadap jumlah penyewaan sepeda. Berdasarkan analisis yang telah dilakukan, diketahui bahwa musim Fall memiliki jumlah penyewaan sepeda tertinggi daripada musim lainnya.")
+st.write("- Tren jumlah penyewaan sepeda semakin meningkat dari waktu ke waktu, hal ini terlihat dari jumlah sewa harian yang semakin naik setiap harinya.")
