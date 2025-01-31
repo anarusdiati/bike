@@ -10,6 +10,7 @@ df = pd.read_csv("day.csv")
 st.write("Nama: Rokhana Diyah Rusdiati")
 st.write("Email: anausername@gmail.com")
 st.write("ID Dicoding: anarusdiati")
+st.write("Source: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/data?select=day.csv")
 
 # Title
 st.title("Bike Sharing Analysis")
