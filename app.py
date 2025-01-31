@@ -5,8 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-url = "https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/download?select=day.csv"
-df = pd.read_csv(url)
+df = pd.read_csv("day.csv")
 
 # Title
 st.title("Bike Sharing Analysis")
@@ -60,3 +59,9 @@ st.pyplot(fig)
 st.write("## Conclusions")
 st.write("- Musim berpengaruh terhadap jumlah penyewaan, dengan Fall sebagai musim dengan penyewaan tertinggi.")
 st.write("- Terdapat tren peningkatan penyewaan dari waktu ke waktu, dengan variasi harian yang terlihat.")
+
+# Instructions for Deployment
+st.write("### Deployment Guide")
+st.write("1. Upload this script and dataset (`day.csv`) to a GitHub repository.")
+st.write("2. Create a Streamlit Cloud account and connect it to your GitHub repository.")
+st.write("3. Deploy the app and ensure `requirements.txt` includes `streamlit pandas numpy matplotlib seaborn`.")
