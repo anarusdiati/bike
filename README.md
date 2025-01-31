@@ -7,12 +7,12 @@ This project analyzes a bike-sharing dataset using Python and Streamlit, providi
 The dataset used in this project comes from Kaggle: Bike Sharing Dataset. The primary file used is day.csv, which contains daily rental counts along with weather and seasonal data.
 
 ### Features
-- Data Overview: Displays the first few rows of the dataset.
-- Missing Values Check: Identifies missing values in the dataset.
-- Seasonal Analysis: Examines the effect of seasons on bike rentals.
-- Trend Analysis: Visualizes rental patterns over time.
-- Correlation Analysis: Shows relationships between bike rentals and weather conditions.
-- Conclusions: Summarizes key findings.
+- **Data Overview:** Displays the first few rows of the dataset.
+- **Missing Values Check:** Identifies missing values in the dataset.
+- **Seasonal Analysis:** Examines the effect of seasons on bike rentals.
+- **Trend Analysis:** Visualizes rental patterns over time.
+- **Correlation Analysis:** Shows relationships between bike rentals and weather conditions.
+- **Conclusions:** Summarizes key findings.
 
 ### Installation & Deployment
 
