@@ -79,7 +79,7 @@ elif menu == "Data Visualization":
     ax.set_xlabel("Weekday")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
-    st.markdown("**Insight:**Bicycle rentals are higher on weekends than on weekdays, indicating that bicycles are used more often for recreational activities..")
+    st.markdown("**Insight:** Bicycle rentals are higher on weekends than on weekdays, indicating that bicycles are used more often for recreational activities..")
   
     # Visualization 2: Scatter plot of temperature vs number of bikes borrowed
     st.write("**Does temperature affect the number of bikes borrowed??**")
@@ -88,6 +88,6 @@ elif menu == "Data Visualization":
     ax.set_xlabel("Temperature")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
-    st.markdown("**Insight:**Bike rentals increase with increasing temperature, but after a certain temperature, the number tends to stabilize.")
+    st.markdown("**Insight:** Bike rentals increase with increasing temperature, but after a certain temperature, the number tends to stabilize.")
 
     
