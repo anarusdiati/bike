@@ -7,12 +7,6 @@ import seaborn as sns
 # Load dataset
 data = pd.read_csv("day.csv")
 
-st.write("Nama: Rokhana Diyah Rusdiati")
-st.write("Email: anausername@gmail.com")
-st.write("ID Dicoding: anarusdiati")
-st.write("Dataset source: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/data?select=day.csv")
-st.write("Streamlit app: https://bikeeeee.streamlit.app/")
-
 # Title
 st.title("Bike Sharing Analysis")
 st.markdown("Data Analysis to understand bike lending trends based on dataset.")
@@ -90,4 +84,8 @@ elif menu == "Data Visualization":
     st.pyplot(fig)
     st.markdown("**Insight:** Bike rentals increase with increasing temperature, but after a certain temperature, the number tends to stabilize.")
 
-    
+st.write("Nama: Rokhana Diyah Rusdiati")
+st.write("Email: anausername@gmail.com")
+st.write("ID Dicoding: anarusdiati")
+st.write("Dataset source: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/data?select=day.csv")
+st.write("Streamlit app: https://bikeeeee.streamlit.app/")
