@@ -16,8 +16,8 @@ st.title("Bike Sharing Analysis")
 
 # Business questions
 st.write("### Business questions")
-st.write("- Bagaimana pengaruh musim terhadap jumlah penyewaan sepeda?")
-st.write("- Bagaimana tren penyewaan sepeda dari waktu ke waktu?")
+st.write("- How does the season affect the number of bike rentals?")
+st.write("- How has the bike rental trend changed over time?")
 
 # Display first few rows
 st.write("### Data Overview", df.head())
@@ -62,5 +62,5 @@ st.pyplot(fig)
 
 # Conclusions
 st.write("## Conclusions")
-st.write("- Musim berpengaruh terhadap jumlah penyewaan sepeda. Berdasarkan analisis yang telah dilakukan, diketahui bahwa musim Fall memiliki jumlah penyewaan sepeda tertinggi daripada musim lainnya.")
-st.write("- Tren jumlah penyewaan sepeda semakin meningkat dari waktu ke waktu, hal ini terlihat dari jumlah sewa harian yang semakin naik setiap harinya.")
+st.write("- Seasons affect the number of bike rentals. Based on the analysis that has been done, it is known that the Fall season has the highest number of bike rentals than other seasons.")
+st.write("- The trend of the number of bicycle rentals is increasing over time, this can be seen from the number of daily rentals which is increasing every day.")
