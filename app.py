@@ -84,6 +84,7 @@ elif menu == "Data Visualization":
     st.pyplot(fig)
     st.markdown("**Insight:** Bike rentals increase with increasing temperature, but after a certain temperature, the number tends to stabilize.")
 
+st.write("---")
 st.write("Nama: Rokhana Diyah Rusdiati")
 st.write("Email: anausername@gmail.com")
 st.write("ID Dicoding: anarusdiati")
