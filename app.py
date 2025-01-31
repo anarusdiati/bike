@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv("day.csv")
+data = pd.read_csv("day.csv")
 
 st.write("Nama: Rokhana Diyah Rusdiati")
 st.write("Email: anausername@gmail.com")
@@ -17,12 +17,8 @@ st.write("Streamlit app: https://bikeeeee.streamlit.app/")
 st.title("Bike Sharing Analysis")
 st.markdown("Data Analysis to understand bike lending trends based on dataset.")
 
-# Load dataset
-url = "https://raw.githubusercontent.com/lakshmi25npathi/Bike-Sharing-Dataset/master/day.csv"
-data = pd.read_csv(url)
-
 # Convert 'dteday' column to datetime format
-df['dteday'] = pd.to_datetime(df['dteday'])
+data['dteday'] = pd.to_datetime(data['dteday'])
 
 # Menu options
 menu = st.sidebar.radio("Analysis:", ["EDA Univariate", "EDA Bivariate", "EDA Multivariate", "Data Visualization"])
@@ -37,7 +33,7 @@ if menu == "EDA Univariate":
     for col in numerical_features:
         fig, ax = plt.subplots(figsize=(6, 4))
         sns.histplot(data[col], kde=True, bins=30, color="blue", ax=ax)
-        ax.set_title(f"Distribusi {col}")
+        ax.set_title(f"Distribution {col}")
         st.pyplot(fig)
 
 # EDA Bivariate
@@ -67,7 +63,7 @@ elif menu == "EDA Multivariate":
     st.write("Shows the relationship between multiple variables at once.")
 
     # Heatmap Correlation
-    df_corr = data.drop(columns=['dteday'])
+    data_corr = data.drop(columns=['dteday'])
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.heatmap(data_corr.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
     st.pyplot(fig)
@@ -79,7 +75,7 @@ elif menu == "Data Visualization":
     # Visualization 1: Boxplot of bike lending by day of the week
     st.write("**What are the bike lending trends based on day of the week?**")
     fig, ax = plt.subplots(figsize=(6, 4))
-    sns.boxplot(x=df["weekday"], y=df["count"], ax=ax)
+    sns.boxplot(x=data["weekday"], y=data["count"], ax=ax)
     ax.set_xlabel("Weekday")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
