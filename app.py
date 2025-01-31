@@ -29,7 +29,9 @@ if menu == "EDA Univariate":
         sns.histplot(data[col], kde=True, bins=30, color="blue", ax=ax)
         ax.set_title(f"Distribution {col}")
         st.pyplot(fig)
-
+    
+    st.write("**Insight:** **'cnt'** shows a right-skewed distribution, meaning there are more days with low bike rentals. **'temp'** and **'atemp'** have nearly normal distributions. **'hum'** tends to be concentrated in the middle. **'windspeed'** has a right-skewed distribution, indicating that high wind speeds are rare.")
+    
 # EDA Bivariate
 elif menu == "EDA Bivariate":
     st.subheader("Bivariate Analysis")
@@ -51,6 +53,8 @@ elif menu == "EDA Bivariate":
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
 
+    st.write("**Insight:** The higher the temperature, the higher the number of bicycle loans up to a certain limit. Fall has the highest number of bikes borrowed. Spring has the lowest.")
+
 # EDA Multivariate
 elif menu == "EDA Multivariate":
     st.subheader("Multivariate Analysis")
@@ -61,6 +65,8 @@ elif menu == "EDA Multivariate":
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.heatmap(data_corr.corr(), annot=True, cmap="coolwarm", fmt=".2f", ax=ax)
     st.pyplot(fig)
+
+    st.write("**Insight:** **'temp'** has a high correlation with **'count'** (positive), meaning that the higher the temperature, the more people use bikes. **'humidity'** has a negative correlation with **'count'**, meaning that on more humid days, fewer people rent bikes. **'windspeed'** has a very low correlation with the number of rentals.")
 
 # Data Visualization
 elif menu == "Data Visualization":
@@ -73,7 +79,7 @@ elif menu == "Data Visualization":
     ax.set_xlabel("Weekday")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
-    st.markdown("**Insight:** Bicycle rentals are higher on weekends than on weekdays, indicating that bicycles are used more often for recreational activities..")
+    st.markdown("**Insight:** Bicycle rentals are higher on weekends than on weekdays, indicating that bicycles are used more often for recreational activities.")
   
     # Visualization 2: Scatter plot of temperature vs number of bikes borrowed
     st.write("**Does temperature affect the number of bikes borrowed??**")
