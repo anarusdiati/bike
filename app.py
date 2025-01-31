@@ -10,7 +10,8 @@ df = pd.read_csv("day.csv")
 st.write("Nama: Rokhana Diyah Rusdiati")
 st.write("Email: anausername@gmail.com")
 st.write("ID Dicoding: anarusdiati")
-st.write("Source: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/data?select=day.csv")
+st.write("Dataset source: https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/data?select=day.csv")
+st.write("Streamlit app: https://bikeeeee.streamlit.app/")
 
 # Title
 st.title("Bike Sharing Analysis")
@@ -37,6 +38,14 @@ fig, ax = plt.subplots(figsize=(10, 5))
 sns.histplot(df['cnt'], bins=30, kde=True, ax=ax)
 ax.set_xlabel('Total Rentals')
 ax.set_ylabel('Frequency')
+st.pyplot(fig)
+
+st.subheader("Univariate Analysis of Numeric Variables")
+numeric_columns = df.select_dtypes(include=['int64', 'float64']).columns
+selected_column = st.selectbox("Select a Numeric Column", numeric_columns)
+
+fig, ax = plt.subplots()
+sns.histplot(df[selected_column], kde=True, ax=ax)
 st.pyplot(fig)
 
 # Seasonal Analysis
