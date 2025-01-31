@@ -4,7 +4,7 @@ This project analyzes a bike-sharing dataset using Python and Streamlit, providi
 
 ### Dataset
 
-The dataset used in this project comes from Kaggle: Bike Sharing Dataset. The primary file used is day.csv, which contains daily rental counts along with weather and seasonal data.
+The dataset used in this project comes from Kaggle: Bike Sharing Dataset. The primary file used is `day.csv`, which contains daily rental counts along with weather and seasonal data. https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset/data?select=day.csv
 
 ### Features
 - **Data Overview:** Displays the first few rows of the dataset.
@@ -34,10 +34,10 @@ Run the Streamlit app:
 
 ### Deploy on Streamlit Cloud
 
- - Push this project to a GitHub repository.
- - Go to Streamlit Cloud and log in.
- - Connect your GitHub repository.
- - Deploy the app and specify app.py as the entry point.
+- Push this project to a GitHub repository.
+- Go to Streamlit Cloud and log in.
+- Connect your GitHub repository.
+- Deploy the app and specify app.py as the entry point.
 
 ### Requirements
 
