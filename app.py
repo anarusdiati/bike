@@ -52,7 +52,7 @@ elif menu == "EDA Bivariate":
     # Boxplot
     st.write("**Boxplot between Season and Number of Bike Borrowings**")
     fig, ax = plt.subplots(figsize=(6, 4))
-    sns.boxplot(x=data["season"], y=data["count"], ax=ax)
+    sns.boxplot(x=data["season"], y=data["cnt"], ax=ax)
     ax.set_xlabel("Season")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
@@ -75,7 +75,7 @@ elif menu == "Data Visualization":
     # Visualization 1: Boxplot of bike lending by day of the week
     st.write("**What are the bike lending trends based on day of the week?**")
     fig, ax = plt.subplots(figsize=(6, 4))
-    sns.boxplot(x=data["weekday"], y=data["count"], ax=ax)
+    sns.boxplot(x=data["weekday"], y=data["cnt"], ax=ax)
     ax.set_xlabel("Weekday")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
@@ -84,7 +84,7 @@ elif menu == "Data Visualization":
     # Visualization 2: Scatter plot of temperature vs number of bikes borrowed
     st.write("**Does temperature affect the number of bikes borrowed??**")
     fig, ax = plt.subplots(figsize=(6, 4))
-    sns.scatterplot(x=data["temp"], y=data["count"], ax=ax)
+    sns.scatterplot(x=data["temp"], y=data["cnt"], ax=ax)
     ax.set_xlabel("Temperature")
     ax.set_ylabel("Bike Rentals")
     st.pyplot(fig)
